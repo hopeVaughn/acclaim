@@ -1,0 +1,66 @@
+.section-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15rem 0;
+  margin-top: -20vh;
+  margin-bottom: 60rem;
+  @include respond(phone) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem;
+    margin: 2rem;
+  }
+}
+
+.section-features {
+  padding: 20rem 0;
+  margin-bottom: 20rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 160, 113, 0.803),
+      rgba(229, 144, 101, 0.803)
+    ),
+    url("../img/mood01.png");
+  background-size: cover;
+  margin-top: -10rem;
+}
+
+.section-art {
+  background-color: var(--color-grey-light-1);
+  padding: 15rem 0 15rem 0;
+  margin-top: -20rem;
+}
+
+.section-sellers-art {
+  margin: 4rem 4rem 0 4rem;
+}
+
+.login-main__container {
+  height: 100vh;
+  object-fit: fill;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 160, 113, 0.803),
+    rgba(208, 102, 49, 0.803)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.index-main__container {
+  height: 100vh;
+  object-fit: fill;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 160, 113, 0.803),
+    rgba(208, 102, 49, 0.803)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}

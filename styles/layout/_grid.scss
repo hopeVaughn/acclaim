@@ -1,0 +1,168 @@
+.flex-row {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.flex-row-features {
+  margin: 0 2rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  gap: 2rem;
+
+  @include respond(tab-land) {
+    margin: 0 3rem 0 3rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+.flex-1-of-2 {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  padding: 0 2rem 0 2rem;
+}
+
+.flex-1-of-4 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ai-card__desc-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  align-content: center;
+  gap: 5rem;
+  margin-left: 1.5rem;
+  @include respond(tab-land) {
+    margin-left: 3.5rem;
+  }
+
+  @include respond(phone) {
+    margin-left: 4rem;
+  }
+}
+
+.section-featured {
+  margin: 0 4rem 0 9.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 2rem;
+
+  @include respond(tab-land) {
+    margin: 0 4rem 0 4rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  @include respond(phone) {
+    margin-left: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+.section-all {
+  margin: 0 4rem 0 9.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 2rem;
+
+  @include respond(tab-land) {
+    margin: 0 4rem 0 4rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  @include respond(phone) {
+    margin-left: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+.section-sell-art {
+  margin: 0 4rem 0 9.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 2rem;
+
+  @include respond(tab-land) {
+    margin: 0 4rem 0 4rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  @include respond(phone) {
+    margin-left: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+// spinning card grid grid
+
+.row {
+  max-width: var(--grid-width);
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: var(--gutter-vertical);
+
+    @include respond(tab-port) {
+      margin-bottom: var(--gutter-vertical-small);
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: var(--gutter-horizontal);
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: var(--gutter-vertical-small);
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{var(--gutter-horizontal)}) / 3);
+  }
+}

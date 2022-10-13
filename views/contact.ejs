@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="../css/icon_font.css" />
+    <link type="text/css" rel="stylesheet" href="../styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8caf2b2a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Contact Seller</title>
+  </head>
+  <body>
+    <!-- header -->
+    <main class="contact-main__container">
+      <header class="contact-header">
+        <div class="contact-header__logo-box">
+          <img
+            src="../img/artificial-intelligence-icon-png-14762.png"
+            alt="site logo"
+            class="contact-header__logo"
+          />
+        </div>
+        <div class="contact-header__text-box">
+          <h1 class="contact-heading-primary">
+            <span class="contact-heading-primary--main">Contact Seller</span>
+          </h1>
+        </div>
+        <div class="container contact-container">
+          <div class="wrapper animate__animated animate__bounceInLeft">
+            <div class="company-info">
+              <h3>Acclaim AI Art</h3>
+              <ul>
+                <li><i class="fa fa-road"></i> 3455 AI Ave</li>
+                <li><i class="fa fa-phone"></i>(555)755-0666</li>
+                <li><i class="fa fa-envelope"></i>acclaim@generate.art</li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h3>Email Seller</h3>
+              <form action="/contact/<%= card_id%>" method="POST">
+                <p>
+                  <label for="">Name</label>
+                  <input type="text" name="name" id="" />
+                </p>
+                <p>
+                  <label for="">Email Address</label>
+                  <input type="email" name="mail" id="" />
+                </p>
+                <p class="full">
+                  <label for="">Message</label>
+                  <textarea name="text" rows="5" id=""></textarea>
+                </p>
+                <p class="full">
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <!-- end of header -->
+  </body>
+</html>

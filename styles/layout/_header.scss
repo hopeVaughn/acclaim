@@ -1,0 +1,271 @@
+// LANDING PAGE HEADER------------------------------------
+.header {
+  height: 95vh;
+  object-fit: fill;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 160, 113, 0.803),
+      rgba(208, 102, 49, 0.803)
+    ),
+    url("../img/city_background.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(
+      25% 0%,
+      75% 0%,
+      100% 35%,
+      80% 100%,
+      20% 100%,
+      0 35%
+    );
+    clip-path: polygon(25% 0%, 75% 0%, 100% 35%, 80% 100%, 20% 100%, 0 35%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 160, 113, 0.8),
+        rgba(208, 102, 49, 0.8)
+      ),
+      url("../img/city_background.png");
+  }
+  @include respond(phone) {
+    -webkit-clip-path: polygon(
+      25% 0%,
+      75% 0%,
+      100% 35%,
+      80% 100%,
+      20% 100%,
+      0 35%
+    );
+    clip-path: polygon(25% 0%, 75% 0%, 100% 35%, 80% 100%, 20% 100%, 0 35%);
+  }
+  &__logo-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    height: 5.5rem;
+    margin-top: 5rem;
+  }
+
+  &__text-box {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    .header-btn {
+      margin: 1rem 0;
+    }
+  }
+}
+// TEMPLATE HEADER ---------------------------------------
+.template-header {
+  height: 95vh;
+  object-fit: fill;
+  margin: 0 4rem 0 6.5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 160, 113, 0.803),
+      rgba(208, 102, 49, 0.803)
+    ),
+    url("../img/city_background.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(
+      25% 0%,
+      75% 0%,
+      100% 35%,
+      80% 100%,
+      20% 100%,
+      0 35%
+    );
+    clip-path: polygon(25% 0%, 75% 0%, 100% 35%, 80% 100%, 20% 100%, 0 35%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 160, 113, 0.8),
+        rgba(208, 102, 49, 0.8)
+      ),
+      url("../img/city_background.png");
+  }
+
+  @include respond(tab-port) {
+    margin: 0rem 2rem 0 6.5rem;
+  }
+  @include respond(phone) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    -webkit-clip-path: polygon(
+      25% 0%,
+      75% 0%,
+      100% 35%,
+      80% 100%,
+      20% 100%,
+      0 35%
+    );
+    clip-path: polygon(25% 0%, 75% 0%, 100% 35%, 80% 100%, 20% 100%, 0 35%);
+    height: 95vh;
+  }
+
+  &__logo-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    height: 5.5rem;
+    margin-top: 5rem;
+  }
+
+  &__text-box {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    .sellers-btn {
+      margin: 1rem 0;
+    }
+  }
+}
+
+// LOGIN HEADER---------------------------------------
+.login-header {
+  height: 95vh;
+  object-fit: fill;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 160, 113, 0.803),
+      rgba(208, 102, 49, 0.803)
+    ),
+    url("../img/abstract01.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(25% 0, 51% 25%, 75% 0, 100% 50%, 52% 81%, 0 50%);
+    clip-path: polygon(25% 0, 51% 25%, 75% 0, 100% 50%, 52% 81%, 0 50%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 160, 113, 0.8),
+        rgba(208, 102, 49, 0.8)
+      ),
+      url("../img/abstract01.png");
+  }
+  @include respond(phone) {
+    -webkit-clip-path: polygon(25% 0, 51% 25%, 75% 0, 100% 50%, 52% 81%, 0 50%);
+    clip-path: polygon(25% 0, 51% 25%, 75% 0, 100% 50%, 52% 81%, 0 50%);
+    height: 95vh;
+    .login-seller-btn {
+      margin-right: 4rem;
+    }
+
+    .login-buyer-btn {
+      margin-left: 4rem;
+    }
+
+    .login-heading-primary--main {
+      padding-left: 4px;
+    }
+
+    .login-header__logo {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__logo-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    height: 5.5rem;
+    margin-left: 3rem;
+    margin-top: 25rem;
+  }
+
+  &__text-box {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.contact-header {
+  height: 100%vh;
+  object-fit: fill;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 160, 113, 0.803),
+    rgba(208, 102, 49, 0.803)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 160, 113, 0.8),
+      rgba(208, 102, 49, 0.8)
+    );
+  }
+  @include respond(phone) {
+    height: 95vh;
+
+    .contact-heading-primary--main {
+      padding-left: 4px;
+    }
+
+    .contact-header__logo {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__logo-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    height: 5.5rem;
+    margin-top: 2rem;
+  }
+
+  &__text-box {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

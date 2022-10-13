@@ -1,0 +1,145 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: var(--default-font-size);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+    color: var(--color-grey-dark);
+
+    &::after {
+      background-color: var(--color-white);
+    }
+  }
+
+  &--green {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.35s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: var(--default-font-size);
+    color: var(--color-primary);
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-primary);
+    padding: 3px;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+  }
+}
+
+.login-btn {
+  margin-left: 2rem;
+}
+
+.ai-card-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 45%;
+  transition: 1s ease-in-out;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.25rem);
+    margin: 0 5rem 0 5rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+.del-btn {
+  width: 100%;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: var(--color-grey-dark);
+}
+
+.sellers-btn {
+  text-align: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 160, 113, 0.8),
+    rgba(208, 102, 49, 0.8)
+  );
+
+  &--white {
+    background-color: rgba(255, 160, 113, 0.8);
+    color: var(--color-grey-dark);
+
+    &::after {
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.post-btn-container {
+  display: grid;
+  grid-template-columns: 22rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7.5rem;
+}

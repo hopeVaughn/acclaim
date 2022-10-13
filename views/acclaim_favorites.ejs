@@ -1,0 +1,34 @@
+<%- include('partials/_navbarAcclaim') %>
+<section class="section-sellers-art">
+  <section class="section-all">
+    <!-- start of card -->
+    <% for(let card of cards) { %>
+    <article class="ai-card" id="favorite-card-<%= card.id %>">
+      <div class="ai-card__img-box">
+        <img src="<%= card.photo %>" class="ai-card__img" alt="dhjdhdhjdjd" />
+      </div>
+      <div class="ai-card__desc-box">
+        <h3 class="ai-card__h3"><%= card.name %></h3>
+        <span class="artist"><%= card.user_name %></span>
+        <div class="post-price">$<%= card.price %></div>
+      </div>
+      <div class="ai-card__sizes">
+        <!-- <h4 class="ai-card-avail">availible in</h4> -->
+        <div class="poster"></div>
+        <div
+          class="ai-card__favorite"
+          id="heart-<%= card.id%>"
+          style="color: red"
+        >
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <button class="ai-card-btn btn btn--white">
+        <a href="/contact/<%= card.email%>">Contact seller</a>
+      </button>
+    </article>
+    <% } %>
+    <!-- end of card-->
+  </section>
+  <!-- end of of all -->
+</section>

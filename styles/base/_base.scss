@@ -1,0 +1,70 @@
+:root {
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  --color-primary: rgb(229, 143, 101);
+  --color-primary-light: rgb(255, 186, 151);
+  --color-primary-dark: rgb(208, 102, 49);
+
+  --color-secondary-light: rgb(255, 185, 0);
+  --color-secondary-dark: rgb(255, 119, 48);
+
+  --color-tertiary-light: rgb(41, 152, 255);
+  --color-tertiary-dark: rgb(86, 67, 250);
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+
+  --color-grey-dark: #777;
+  --color-white: #fff;
+  --color-black: rgb(0, 0, 0);
+
+  // font sizes
+
+  --default-font-size: 1.6rem;
+
+  //grid
+  --grid-width: 114rem;
+  --gutter-vertical: 8rem;
+  --gutter-horizontal: 6rem;
+  --gutter-vertical-small: 6rem;
+  --transition-speed: 600ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #e58f65ff;
+  }
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

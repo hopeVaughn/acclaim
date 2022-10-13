@@ -1,0 +1,40 @@
+<%- include('partials/_navbarAcclaim') %>
+
+  <section class="section-sellers-art">
+    <div class="u-center-text u-margin-bottom-big">
+      <h2 class="sellers-heading-secondary">Search Results</h2>
+    </div>
+    <!-- start of search -->
+    <section class="section-featured">
+      <!-- start of products -->
+      <% for(let product of products) { %>
+        <article class="ai-card">
+          <div class="ai-card__img-box">
+            <img src="<%= product.photo %>" class="ai-card__img" alt="<%= product.name %>" />
+          </div>
+          <div class="ai-card__desc-box">
+            <p class="ai-card__p">
+              <%= product.name %>
+            </p>
+            <span class="artist">
+              <%= product.user_name %>
+            </span>
+            <div class="post-price">
+              $<%= product.price %>
+            </div>
+          </div>
+          <div class="ai-card__sizes">
+          </div>
+          <div class="ai-card__favorite" id="heart-<%= product.id%>">
+            <!--"heart-<%= product.id%>"  shows id of every card-->
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          </div>
+          <button class="ai-card-btn btn btn--white">
+            <a href="/contact/<%= product.email%>">Contact seller</a>
+          </button>
+        </article>
+
+        <% } %>
+
+    </section>

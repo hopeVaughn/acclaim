@@ -1,0 +1,110 @@
+/* Coolors Exported Palette - https://coolors.co/af6d44-c0784b-8a5940-543934-2f242c */
+* {
+  /* CSS HEX */
+  --brown-sugar: #af6d44ff;
+  --brown-sugar-2: #c0784bff;
+  --coffee: #8a5940ff;
+  --dark-liver-horses: #543934ff;
+  --black-coffee: #2f242cff;
+
+  /* CSS HSL */
+  --brown-sugar: hsla(23, 44%, 48%, 1);
+  --brown-sugar-2: hsla(23, 48%, 52%, 1);
+  --coffee: hsla(20, 37%, 40%, 1);
+  --dark-liver-horses: hsla(9, 24%, 27%, 1);
+  --black-coffee: hsla(316, 13%, 16%, 1);
+
+  /* SCSS HEX */
+  $brown-sugar: #af6d44ff;
+  $brown-sugar-2: #c0784bff;
+  $coffee: #8a5940ff;
+  $dark-liver-horses: #543934ff;
+  $black-coffee: #2f242cff;
+
+  /* SCSS HSL */
+  $brown-sugar: hsla(23, 44%, 48%, 1);
+  $brown-sugar-2: hsla(23, 48%, 52%, 1);
+  $coffee: hsla(20, 37%, 40%, 1);
+  $dark-liver-horses: hsla(9, 24%, 27%, 1);
+  $black-coffee: hsla(316, 13%, 16%, 1);
+
+  /* SCSS RGB */
+  $brown-sugar: rgba(175, 109, 68, 1);
+  $brown-sugar-2: rgba(192, 120, 75, 1);
+  $coffee: rgba(138, 89, 64, 1);
+  $dark-liver-horses: rgba(84, 57, 52, 1);
+  $black-coffee: rgba(47, 36, 44, 1);
+
+  /* SCSS Gradient */
+  $gradient-top: linear-gradient(
+    0deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-right: linear-gradient(
+    90deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-bottom: linear-gradient(
+    180deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-left: linear-gradient(
+    270deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-top-right: linear-gradient(
+    45deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-bottom-right: linear-gradient(
+    135deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-top-left: linear-gradient(
+    225deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-bottom-left: linear-gradient(
+    315deg,
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+  $gradient-radial: radial-gradient(
+    #af6d44ff,
+    #c0784bff,
+    #8a5940ff,
+    #543934ff,
+    #2f242cff
+  );
+}
